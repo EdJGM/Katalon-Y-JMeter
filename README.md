@@ -32,7 +32,7 @@ Para instalar Katalon Studio, sigue los siguientes pasos:
 
 4. **Instalar en Ubuntu**:
 
-    Antes de instalar, asegúrese de configurar el entorno necesario para Katalon Studio.
+    Antes de instalar, asegúrate de configurar el entorno necesario para Katalon Studio.
 
    - Instala OpenJDK 17 (NO Oracle JDK). Abre tu Terminal y escribe: 
    ```sh
@@ -52,9 +52,9 @@ Para instalar Katalon Studio, sigue los siguientes pasos:
 
 ### Activación de Katalon Studio
 
+1. Registrate en [Katalon TestOps](https://analytics.katalon.com/)
 1. Abre Katalon Studio.
 2. Inicia sesión con tu cuenta de Katalon.
-3. Si no tienes una cuenta, puedes registrarte en [Katalon TestOps](https://analytics.katalon.com/).
 
 Para más detalles, consulta la [documentación oficial de Katalon Studio](https://docs.katalon.com/katalon-studio/get-started/install-katalon-studio).
 
