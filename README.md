@@ -58,7 +58,74 @@ Para instalar Katalon Studio, sigue los siguientes pasos:
 
 Para más detalles, consulta la [documentación oficial de Katalon Studio](https://docs.katalon.com/katalon-studio/get-started/install-katalon-studio).
 
-## Ejemplos de uso
+### Requisitos para Pruebas de Aplicaciones Móviles
+
+Si bien ya con los pasos anteriores podriamos usar Katalon para aplicaciones web, en esta oportunidad tambien se va a usar la herramieta para aplicaciones moviles,
+es por ello que se necesita los siguientes requisitos:
+
+1. **NodeJs**
+   - **Versión Recomendada:** Node.js 12.x o superior
+   - **Descargar e Instalar:**
+      * Visita el sitio web oficial de Node.js: https://nodejs.org/ 
+      * Selecciona la versión LTS (Long Term Support)
+      * Sigue el asistente de instalación para tu sistema operativo
+   - **Verificación de Instalación:**
+      ```sh
+      node --version
+      npm --version
+      ```
+2. **APPIUM**
+   
+   Katalon utiliza la biblioteca de código abierto Appium. Entonces, después de instalar con éxito node.js, el siguiente paso es instalar Appium.
+   Para instalar Appium, necesita Java. Por lo tanto, asegúrese de que Java esté instalado en el servidor ingresando el siguiente comando:
+   ```sh
+   java --version
+   ```
+   - **Instalación via npm (Node Package Manager)**
+   ```sh
+   npm install -g appium
+   ```
+   - **Verificación de Instalación**
+   ````sh
+   appium --version
+   ```
+3. Android Studio (funcionara como emulador de un dispositovo movil)
+
+   - **Descargar:**
+      * Ingresa a https://developer.android.com/studio
+      * Descarga la última versión para tu sistema operativo
+   
+   - **Instalación:**
+      * Ejecuta el instalador de Android Studio
+      * Sigue el asistente de instalación
+      * Durante la instalación, asegúrate de marcar las opciones:
+         Android SDK
+         Android SDK Platform
+         Android Virtual Device (AVD)
+
+   - **Configuración de Variables de Entorno**
+      * **Variables Android:**
+         ANDROID_HOME: Ruta al SDK de Android
+         Ejemplo en Windows:
+         ```sh
+         Variable: ANDROID_HOME
+         Valor: C:\Users\[TuNombre]\AppData\Local\Android\Sdk
+         ```
+      * **Agregar al PATH:**
+         ```sh
+         %ANDROID_HOME%\platform-tools
+         %ANDROID_HOME%\tools
+         %ANDROID_HOME%\tools\bin
+         ```
+   - **Emuladores y Dispositivos**
+      * Crear Dispositivo Virtual (AVD) en Android Studio:
+         - Abre Android Studio
+         - Selecciona "Tools" > "AVD Manager"
+         - Haz clic en "Create Virtual Device"
+         - Elige un dispositivo y una imagen del sistema
+         - Configura las características del dispositivo virtual
+
+## Creación y ejecución de un caso de prueba de Android en Katalon Studio
 
 Este repositorio contiene ejemplos de uso de Katalon y JMeter para diferentes escenarios de testing. Explora las carpetas y archivos para más información.
 
