@@ -86,7 +86,7 @@ es por ello que se necesita los siguientes requisitos:
    npm install -g appium
    ```
    - **Verificación de Instalación**
-   ````sh
+   ```sh
    appium --version
    ```
 3. Android Studio (funcionara como emulador de un dispositovo movil)
@@ -105,8 +105,8 @@ es por ello que se necesita los siguientes requisitos:
 
    - **Configuración de Variables de Entorno**
       * **Variables Android:**
-         ANDROID_HOME: Ruta al SDK de Android
-         Ejemplo en Windows:
+         - ANDROID_HOME: Ruta al SDK de Android
+         - Ejemplo en Windows:
          ```sh
          Variable: ANDROID_HOME
          Valor: C:\Users\[TuNombre]\AppData\Local\Android\Sdk
