@@ -128,7 +128,7 @@ es por ello que se necesita los siguientes requisitos:
 
 
 
-## Creación y ejecución de un caso de prueba de Android en Katalon Studio
+## Instalación de JMetet
 
 Este repositorio contiene ejemplos de uso de Katalon y JMeter para diferentes escenarios de testing. Explora las carpetas y archivos para más información.
 
