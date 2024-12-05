@@ -120,12 +120,15 @@ es por ello que se necesita los siguientes requisitos:
    - **Emuladores y Dispositivos**
       * Crear Dispositivo Virtual (AVD) en Android Studio:
          - Abre Android Studio
-         - Selecciona "Tools" > "AVD Manager"
+         - Selecciona "Tools" > "Virtual Device Manager"
          - Haz clic en "Create Virtual Device"
-         - Elige un dispositivo y una imagen del sistema
-         - Configura las características del dispositivo virtual
+           
+         <img src="https://github.com/user-attachments/assets/c5116664-b67a-4a2c-8b3a-2486a9acd98d" width="200" height="auto">
 
-## Creación y ejecución de un caso de prueba de Android en Katalon Studio
+
+
+
+## Instalación de JMetet
 
 Este repositorio contiene ejemplos de uso de Katalon y JMeter para diferentes escenarios de testing. Explora las carpetas y archivos para más información.
 
