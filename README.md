@@ -130,5 +130,61 @@ es por ello que se necesita los siguientes requisitos:
 
 ## Instalación de JMeter
 
+Esta guía proporciona pasos detallados para instalar, configurar y usar **Apache JMeter** para pruebas de rendimiento y carga. Abarca los requisitos del sistema, las instrucciones de instalación y un ejemplo de creación y ejecución de un plan de prueba básico.
 
+---
 
+### 1. Requisitos del sistema
+
+Para instalar y usar JMeter, asegúrese de que su sistema cumpla con los siguientes requisitos:
+
+#### Hardware
+- **RAM**: Mínimo 2 GB (se recomiendan 4 GB o más para pruebas grandes).
+- **Espacio en disco**: Al menos 500 MB libres.
+
+#### Software
+- **Sistema operativo**: Compatible con Windows, macOS y Linux.
+- **Java**: Java Development Kit (JDK) versión 8 o superior.
+- [Descargar JDK](https://www.oracle.com/java/technologies/javase-downloads.html).
+
+---
+
+### 2. Instalación de JMeter
+
+#### Paso 1: Descargar Apache JMeter
+1. Visita el sitio web oficial de JMeter: [https://jmeter.apache.org/](https://jmeter.apache.org/).
+2. Descarga la última versión **binaria** estable como archivo ZIP.
+
+#### Paso 2: Instalar JMeter
+1. Extrae el archivo ZIP en tu directorio preferido (por ejemplo, `C:\apache-jmeter` o `/usr/local/apache-jmeter`).
+2. Navega hasta la carpeta extraída para verificar su estructura:
+- `bin`: Contiene scripts para iniciar JMeter.
+- `lib`: Contiene bibliotecas y complementos.
+
+---
+
+### 3. Configuración de JMeter
+
+#### Paso 1: Configurar Java
+1. Verificar la instalación de Java:
+```bash
+java -version
+```
+2. Si Java no está instalado, descargue e instale el JDK.
+3. Configure la variable de entorno JAVA_HOME:
+- Windows:
+   * Vaya a "Este equipo > Propiedades > Configuración avanzada del sistema > Variables de entorno".
+   * Agregue:
+   * Nombre: JAVA_HOME
+   * Valor: Ruta a la carpeta JDK (p. ej., C:\Program Files\Java\jdk-17).
+- Linux/macOS: Agregue a .bashrc o .zshrc:
+   ```bash
+   export JAVA_HOME=/path/to/jdk
+   export PATH=$JAVA_HOME/bin:$PATH
+   ```
+   * Reinicie la terminal o el símbolo del sistema.
+#### Paso 2: Inicie JMeter
+1. Navegue a la carpeta bin en el directorio de instalación de JMeter.
+- Ejecute:
+   * Windows: Haga doble clic en jmeter.bat.
+- Linux/macOS: Ejecute ./jmeter en la terminal
