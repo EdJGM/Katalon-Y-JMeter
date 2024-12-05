@@ -1,5 +1,5 @@
 # Katalon-Y-JMeter
-Repositorio que contiene ejemplso de uso de las herramientas de testing Katalon y JMeter
+Repositorio que contiene pasos de instalación y configuración de las aplicaciones testing Katalon y JMeter
 
 ## Instalación de Katalon Studio
 
