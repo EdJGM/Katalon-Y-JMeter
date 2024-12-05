@@ -128,7 +128,7 @@ es por ello que se necesita los siguientes requisitos:
 
 
 
-## Instalación de JMetet
+## Instalación de JMeter
 
 
 
