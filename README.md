@@ -130,7 +130,7 @@ es por ello que se necesita los siguientes requisitos:
 
 ## Instalación de JMeter
 
-Esta guía proporciona pasos detallados para instalar, configurar y usar **Apache JMeter** para pruebas de rendimiento y carga. Abarca los requisitos del sistema, las instrucciones de instalación y un ejemplo de creación y ejecución de un plan de prueba básico.
+Estos son los pasos detallados para instalar, configurar y usar **Apache JMeter** para pruebas de rendimiento y carga. Abarca los requisitos del sistema, las instrucciones de instalación y un ejemplo de creación y ejecución de un plan de prueba básico.
 
 ---
 
@@ -176,7 +176,7 @@ java -version
    * Vaya a "Este equipo > Propiedades > Configuración avanzada del sistema > Variables de entorno".
    * Agregue:
    * Nombre: JAVA_HOME
-   * Valor: Ruta a la carpeta JDK (p. ej., C:\Program Files\Java\jdk-17).
+   * Valor: Ruta a la carpeta JDK (p. ej., C:\Program Files\Java\jdk-17.
 - Linux/macOS: Agregue a .bashrc o .zshrc:
    ```bash
    export JAVA_HOME=/path/to/jdk
@@ -184,7 +184,7 @@ java -version
    ```
    * Reinicie la terminal o el símbolo del sistema.
 #### Paso 2: Inicie JMeter
-1. Navegue a la carpeta bin en el directorio de instalación de JMeter.
+1. Navegue a la carpeta bin en el directorio en el que descargo JMeter.
 - Ejecute:
    * Windows: Haga doble clic en jmeter.bat.
    * Linux/macOS: Ejecute ./jmeter en la terminal
