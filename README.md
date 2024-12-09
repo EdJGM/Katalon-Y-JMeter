@@ -77,7 +77,7 @@ es por ello que se necesita los siguientes requisitos:
 2. **APPIUM**
    
    Katalon utiliza la biblioteca de código abierto Appium. Entonces, después de instalar con éxito node.js, el siguiente paso es instalar Appium.
-   Para instalar Appium, necesita Java. Por lo tanto, asegúrese de que Java esté instalado en el servidor ingresando el siguiente comando:
+   Para instalar Appium, necesita Java. Por lo tanto, asegúrese de que Java esté instalado ingresando el siguiente comando:
    ```sh
    java --version
    ```
@@ -99,9 +99,11 @@ es por ello que se necesita los siguientes requisitos:
       * Ejecuta el instalador de Android Studio
       * Sigue el asistente de instalación
       * Durante la instalación, asegúrate de marcar las opciones:
-         Android SDK
-         Android SDK Platform
-         Android Virtual Device (AVD)
+         - Android SDK Build-Tools
+         - Android SDK Platform-Tools
+         - Android Emulator
+         - Android Emulator hypervisor driver
+        
 
    - **Configuración de Variables de Entorno**
       * **Variables Android:**
