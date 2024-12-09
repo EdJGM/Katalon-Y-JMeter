@@ -119,6 +119,7 @@ es por ello que se necesita los siguientes requisitos:
          %ANDROID_HOME%\tools
          %ANDROID_HOME%\tools\bin
          ```
+         - *Nota: Se recomienda agregar al PATH tanto del sistema como del usuario*
    - **Emuladores y Dispositivos**
       * Crear Dispositivo Virtual (AVD) en Android Studio:
          - Abre Android Studio
