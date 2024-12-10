@@ -136,7 +136,7 @@ es por ello que se necesita los siguientes requisitos:
            
          <img src="https://github.com/user-attachments/assets/c5116664-b67a-4a2c-8b3a-2486a9acd98d" width="200" height="auto">
       * Configurar una apk de prueba
-        - Incicializar el dispotivo creado en el paso anterior y instalar el apk de prueba: **APIDemos.apk**
+        - Incicializar el dispositivo creado en el paso anterior e instalar el apk de prueba: **APIDemos.apk**
         - Abrir Katalon Studio y seleccionar crear un nuevo proyecto
         - En las opciones que se despliegan, colocar el nombre, el tipo de dispositivo en donde se realizaran las pruebas en este caso *movil* y la ruta donde quiere que se guarde el proyecto
         - En la barra de opciones existe el siguiente icono:
