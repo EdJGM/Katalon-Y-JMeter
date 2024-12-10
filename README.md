@@ -85,10 +85,18 @@ es por ello que se necesita los siguientes requisitos:
    ```sh
    npm install -g appium
    ```
+   - **Instalación de *uiautomator2***
+   ```sh
+   appium driver install uiautomator2
+   ```     
    - **Verificación de Instalación**
    ```sh
    appium --version
    ```
+   - Verificar si aparece el driver *uiatomator2*
+   ```sh
+   appium driver list --installed
+   ``` 
 3. Android Studio (funcionara como emulador de un dispositovo movil)
 
    - **Descargar:**
@@ -127,9 +135,16 @@ es por ello que se necesita los siguientes requisitos:
          - Haz clic en "Create Virtual Device"
            
          <img src="https://github.com/user-attachments/assets/c5116664-b67a-4a2c-8b3a-2486a9acd98d" width="200" height="auto">
-
-
-
+      * Configurar una apk de prueba
+        - Incicializar el dispotivo creado en el paso anterior y instalar el apk de prueba: **APIDemos.apk**
+        - Abrir Katalon Studio y seleccionar crear un nuevo proyecto
+        - En las opciones que se despliegan, colocar el nombre, el tipo de dispositivo en donde se realizaran las pruebas en este caso *movil* y la ruta donde quiere que se guarde el proyecto
+        - En la barra de opciones exite la siguiente opcion:
+           <img src="https://github.com/user-attachments/assets/dc129299-fe7c-4d22-873b-d482020dfc5d" width="200" height="auto">
+          Presionamos y seleccionamos *Android Devices*
+        - Si al iniciar nos pregunta si queremos descargar recursos para Android SDK le dame que sí.
+        - Devemos vizualizar el emulador que se esta ejecutando para seleccionar el apk de nuestro directorio
+        - Presionamos el boton *Start*, y prodiamos la aplicacion lista para los casos de prueba
 
 ## Instalación de JMeter
 
