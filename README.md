@@ -139,12 +139,12 @@ es por ello que se necesita los siguientes requisitos:
         - Incicializar el dispotivo creado en el paso anterior y instalar el apk de prueba: **APIDemos.apk**
         - Abrir Katalon Studio y seleccionar crear un nuevo proyecto
         - En las opciones que se despliegan, colocar el nombre, el tipo de dispositivo en donde se realizaran las pruebas en este caso *movil* y la ruta donde quiere que se guarde el proyecto
-        - En la barra de opciones exite la siguiente opcion:
-           <img src="https://github.com/user-attachments/assets/dc129299-fe7c-4d22-873b-d482020dfc5d" width="50" height="auto">
+        - En la barra de opciones existe el siguiente icono:
+           <img src="https://github.com/user-attachments/assets/fa7e24f1-5123-4ac7-ae70-03534a49666d" width="50" height="auto">
           Presionamos y seleccionamos *Android Devices*
         - Si al iniciar nos pregunta si queremos descargar recursos para Android SDK le damos que sí.
-        - Devemos vizualizar el emulador que se esta ejecutando para seleccionar el apk de nuestro directorio
-        - Presionamos el boton *Start*, y prodiamos la aplicacion lista para los casos de prueba
+        - Devemos vizualizar el nombre del emulador creado en *Device Name*. En *Application File* colocar el apk con la dirección en donde se encuentré en el directorio
+        - Presionamos el boton *Start*, y tendriamos la herramienta lista para los casos de prueba
 
 ## Instalación de JMeter
 
