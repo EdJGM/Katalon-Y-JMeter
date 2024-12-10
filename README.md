@@ -1,5 +1,5 @@
 # Katalon-Y-JMeter
-Repositorio que contiene ejemplso de uso de las herramientas de testing Katalon y JMeter
+Repositorio que contiene pasos de instalación y configuración de las aplicaciones testing Katalon y JMeter
 
 ## Instalación de Katalon Studio
 
@@ -77,7 +77,7 @@ es por ello que se necesita los siguientes requisitos:
 2. **APPIUM**
    
    Katalon utiliza la biblioteca de código abierto Appium. Entonces, después de instalar con éxito node.js, el siguiente paso es instalar Appium.
-   Para instalar Appium, necesita Java. Por lo tanto, asegúrese de que Java esté instalado en el servidor ingresando el siguiente comando:
+   Para instalar Appium, necesita Java. Por lo tanto, asegúrese de que Java esté instalado ingresando el siguiente comando:
    ```sh
    java --version
    ```
@@ -85,10 +85,18 @@ es por ello que se necesita los siguientes requisitos:
    ```sh
    npm install -g appium
    ```
+   - **Instalación de *uiautomator2***
+   ```sh
+   appium driver install uiautomator2
+   ```     
    - **Verificación de Instalación**
    ```sh
    appium --version
    ```
+   - Verificar si aparece el driver *uiatomator2*
+   ```sh
+   appium driver list --installed
+   ``` 
 3. Android Studio (funcionara como emulador de un dispositovo movil)
 
    - **Descargar:**
@@ -99,9 +107,11 @@ es por ello que se necesita los siguientes requisitos:
       * Ejecuta el instalador de Android Studio
       * Sigue el asistente de instalación
       * Durante la instalación, asegúrate de marcar las opciones:
-         Android SDK
-         Android SDK Platform
-         Android Virtual Device (AVD)
+         - Android SDK Build-Tools
+         - Android SDK Platform-Tools
+         - Android Emulator
+         - Android Emulator hypervisor driver
+        
 
    - **Configuración de Variables de Entorno**
       * **Variables Android:**
@@ -117,6 +127,7 @@ es por ello que se necesita los siguientes requisitos:
          %ANDROID_HOME%\tools
          %ANDROID_HOME%\tools\bin
          ```
+         - *Nota: Se recomienda agregar al PATH tanto del sistema como del usuario*
    - **Emuladores y Dispositivos**
       * Crear Dispositivo Virtual (AVD) en Android Studio:
          - Abre Android Studio
@@ -124,12 +135,75 @@ es por ello que se necesita los siguientes requisitos:
          - Haz clic en "Create Virtual Device"
            
          <img src="https://github.com/user-attachments/assets/c5116664-b67a-4a2c-8b3a-2486a9acd98d" width="200" height="auto">
+      * Configurar una apk de prueba
+        - Incicializar el dispositivo creado en el paso anterior e instalar el apk de prueba: **APIDemos.apk**
+        - Abrir Katalon Studio y seleccionar crear un nuevo proyecto
+        - En las opciones que se despliegan, colocar el nombre, el tipo de dispositivo en donde se realizaran las pruebas en este caso *movil* y la ruta donde quiere que se guarde el proyecto
+        - En la barra de opciones existe el siguiente icono:
+           <img src="https://github.com/user-attachments/assets/fa7e24f1-5123-4ac7-ae70-03534a49666d" width="50" height="auto">
+          Presionamos y seleccionamos *Android Devices*
+        - Si al iniciar nos pregunta si queremos descargar recursos para Android SDK le damos que sí.
+        - Devemos vizualizar el nombre del emulador creado en *Device Name*. En *Application File* colocar el apk con la dirección en donde se encuentré en el directorio
+        - Presionamos el boton *Start*, y tendriamos la herramienta lista para los casos de prueba
 
+## Instalación de JMeter
 
+Estos son los pasos detallados para instalar, configurar y usar **Apache JMeter** para pruebas de rendimiento y carga. Abarca los requisitos del sistema, las instrucciones de instalación y un ejemplo de creación y ejecución de un plan de prueba básico.
 
+---
 
-## Instalación de JMetet
+### 1. Requisitos del sistema
 
-Este repositorio contiene ejemplos de uso de Katalon y JMeter para diferentes escenarios de testing. Explora las carpetas y archivos para más información.
+Para instalar y usar JMeter, asegúrese de que su sistema cumpla con los siguientes requisitos:
 
+#### Hardware
+- **RAM**: Mínimo 2 GB (se recomiendan 4 GB o más para pruebas grandes).
+- **Espacio en disco**: Al menos 500 MB libres.
 
+#### Software
+- **Sistema operativo**: Compatible con Windows, macOS y Linux.
+- **Java**: Java Development Kit (JDK) versión 8 o superior.
+- [Descargar JDK](https://www.oracle.com/java/technologies/javase-downloads.html).
+- **Mozilla Firefox**
+
+---
+
+### 2. Instalación de JMeter
+
+#### Paso 1: Descargar Apache JMeter
+1. Visita el sitio web oficial de JMeter: [https://jmeter.apache.org/](https://jmeter.apache.org/).
+2. Descarga la última versión **binaria** estable como archivo ZIP.
+
+#### Paso 2: Instalar JMeter
+1. Extrae el archivo ZIP en tu directorio preferido (por ejemplo, `C:\apache-jmeter` o `/usr/local/apache-jmeter`).
+2. Navega hasta la carpeta extraída para verificar su estructura:
+- `bin`: Contiene scripts para iniciar JMeter.
+- `lib`: Contiene bibliotecas y complementos.
+
+---
+
+### 3. Configuración de JMeter
+
+#### Paso 1: Configurar Java
+1. Verificar la instalación de Java:
+```bash
+java -version
+```
+2. Si Java no está instalado, descargue e instale el JDK.
+3. Configure la variable de entorno JAVA_HOME:
+- Windows:
+   * Vaya a "Este equipo > Propiedades > Configuración avanzada del sistema > Variables de entorno".
+   * Agregue:
+   * Nombre: JAVA_HOME
+   * Valor: Ruta a la carpeta JDK (p. ej., C:\Program Files\Java\jdk-17.
+- Linux/macOS: Agregue a .bashrc o .zshrc:
+   ```bash
+   export JAVA_HOME=/path/to/jdk
+   export PATH=$JAVA_HOME/bin:$PATH
+   ```
+   * Reinicie la terminal o el símbolo del sistema.
+#### Paso 2: Inicie JMeter
+1. Navegue a la carpeta bin en el directorio en el que descargo JMeter.
+- Ejecute:
+   * Windows: Haga doble clic en **ApacheJMeter.bat**.
+   * Linux/macOS: Ejecute ./jmeter en la terminal
