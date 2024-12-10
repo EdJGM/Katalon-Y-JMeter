@@ -164,6 +164,7 @@ Para instalar y usar JMeter, asegúrese de que su sistema cumpla con los siguien
 - **Sistema operativo**: Compatible con Windows, macOS y Linux.
 - **Java**: Java Development Kit (JDK) versión 8 o superior.
 - [Descargar JDK](https://www.oracle.com/java/technologies/javase-downloads.html).
+- **Mozilla Firefox**
 
 ---
 
