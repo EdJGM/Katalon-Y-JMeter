@@ -142,7 +142,7 @@ es por ello que se necesita los siguientes requisitos:
         - En la barra de opciones exite la siguiente opcion:
            <img src="https://github.com/user-attachments/assets/dc129299-fe7c-4d22-873b-d482020dfc5d" width="50" height="auto">
           Presionamos y seleccionamos *Android Devices*
-        - Si al iniciar nos pregunta si queremos descargar recursos para Android SDK le dame que sí.
+        - Si al iniciar nos pregunta si queremos descargar recursos para Android SDK le damos que sí.
         - Devemos vizualizar el emulador que se esta ejecutando para seleccionar el apk de nuestro directorio
         - Presionamos el boton *Start*, y prodiamos la aplicacion lista para los casos de prueba
 
