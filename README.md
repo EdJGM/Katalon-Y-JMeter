@@ -189,5 +189,5 @@ java -version
 #### Paso 2: Inicie JMeter
 1. Navegue a la carpeta bin en el directorio en el que descargo JMeter.
 - Ejecute:
-   * Windows: Haga doble clic en jmeter.bat.
+   * Windows: Haga doble clic en **ApacheJMeter.bat**.
    * Linux/macOS: Ejecute ./jmeter en la terminal
